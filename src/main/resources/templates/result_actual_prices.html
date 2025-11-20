@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+    <div id="main">
+    <h1>Actual prices result</h1>
+    <p th:text="'Instrument: ' + ${instr}" />
+    <p th:text="'Actual price: ' + ${price}" />
+    <a th:href="@{'/actual_prices'}">Back to the frontpage</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <div id="main">
+      <h1>Open positions</h1>
+      <p th:text="'Instrument: ' + ${instr}" />
+      <p th:text="'Units: ' + ${units}" />
+      <p th:text="${id}" />
+      <a th:href="@{'/'}">Back to the frontpage</a>
+  </div>
+</body>
+</html>
