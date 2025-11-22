@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+        <nav>
+
+        </nav>
+		<!-- Wrapper -->
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>This is<br />
+						My assignment</h1>
+						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo">Massively Style</a>
+					</header>
+
+                    <nav id="nav">
+                        <ul class="links">
+                            <li><a href="/open_position">Open Position</a></li>
+                            <li><a href="/close_position">Close Position</a></li>
+                            <li><a href="/actual_prices">Actual Prices</a></li>
+                            <li><a href="/hist_prices">Historical Prices</a></li>
+                        </ul>
+
+                    </nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <h3>Get values of the currency in HUF</h3>
+                        <div class="inner"><form action="#" th:action="@{/soap}" th:object="${param}" method="post">
+                            <select name="currencies" th:field="*{currency}">
+                                <option value="EUR">EUR</option>
+                                <option value="USD">USD</option>
+                                <option value="GBP">GBP</option>
+                                <option value="JPY">JPY</option>
+                            </select><br>
+                            Start date: <input type="date" th:field="*{startDate}"><br>
+                            End date: <input type="date" th:field="*{endDate}"><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                        </div>
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.scrollex.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/browser.min.js"></script>
+			<script src="/js/breakpoints.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
